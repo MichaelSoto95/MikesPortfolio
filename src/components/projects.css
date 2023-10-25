@@ -1,0 +1,34 @@
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  color: #34343a;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/background.svg");
+  background-size: cover;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #34343a;
+  width: 80%;
+  min-height: 350px;
+  background-color: white;
+  box-shadow: 5px 5px 10px #4b494912, -5px -5px 10px #4b494912;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}

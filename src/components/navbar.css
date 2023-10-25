@@ -1,0 +1,136 @@
+.navbar{
+position: sticky;
+ top :0;
+ box-shadow:  5px 5px 10px #4b494912,
+ -5px -5px 10px #4b494912;
+ z-index: 8;
+ display: flex;
+ align-items: center;
+ height: 10vh;
+ transition: .5s ease-in;
+ background-color: white;
+}
+/* .shadow{
+    box-shadow:  5px 5px 10px #4b49492d,
+       -5px -5px 10px #4b49492d; 
+       z-index: 2;
+       padding: 10px;
+} */
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: .5rem;
+
+    width: 100%;
+    padding: 1rem;
+
+
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+background-color: white;
+}
+.nav-list-item {
+    padding: 1rem;
+    cursor: pointer; 
+   
+     font-weight: 700;
+     cursor: pointer;
+    
+}
+.link{
+     text-decoration: none; 
+      color: #646cff;
+}
+.link:hover{
+    color: #34343a;
+
+}
+.icon{
+  width:30px;
+  height: 30px;
+  background-image: url('../assets/images/logo.svg');
+}
+.black{
+    color: #646cff;
+}
+.logo:hover {
+    filter: drop-shadow(2 2 2em #646cffaa);
+  }
+
+  .logo{
+   cursor:pointer;
+   padding: .1rem;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: #34343a;
+  
+  }
+  .logo-container{
+      display: flex;
+      align-items: center;
+      /* border: #646cff solid .2px;
+      padding:3px; 
+      border-radius: 3px;*/
+  }
+  .burger-menu{
+      display: none;
+
+  }
+  .burger-menu button{
+    font-weight: 800;
+      transform: rotate(90deg);
+      padding: .5rem;
+      font-size: 1.2rem;
+    
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    .navbar-container{
+        flex-direction: column;
+    }
+
+   .logo-container{
+    width: 100%;
+    text-align: start;
+
+  
+
+   }.link{
+    text-decoration: none;
+    cursor: pointer;
+   }
+   .nav-list{
+       position: fixed;
+         z-index: 2;
+       top: 100px;
+       left: -100%;
+       width: 95%;
+       flex-direction: column;
+       justify-content: left;
+       align-items: flex-start;
+       transition: .4s;
+       box-shadow:  5px 5px 10px #4b494912,
+       -5px -5px 10px #4b494912;
+       border-radius: .5rem;
+   
+   }
+   .active{
+     left: 2.5%;
+   }
+  .nav-list-item{
+     
+      width: 100%;
+  }
+
+
+   .burger-menu{
+       display:block;
+       position: absolute;
+       top: 1.2rem;
+       right: 1rem;
+   }
+  }
