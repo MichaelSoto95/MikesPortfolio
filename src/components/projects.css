@@ -5,6 +5,8 @@
   justify-content: center;
   min-height: 90vh;
   color: #34343a;
+  background-image: url("../assets/images/background.svg");
+  background-size: cover;
 }
 
 .project-container {
@@ -14,8 +16,6 @@
   place-items: center;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/images/background.svg");
-  background-size: cover;
 }
 
 .projects {

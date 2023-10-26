@@ -33,7 +33,7 @@ const Footer = () => {
           target="blank">
           <Linked />
         </a>
-        <a href={Resume} className="social-icon" download={Resume}>
+        <a href={Resume} className="social-icon" download="MSOTORESUME">
           <ResumeIcon />
         </a>
       </div>

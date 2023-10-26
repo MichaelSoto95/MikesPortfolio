@@ -1,12 +1,14 @@
-import React from "react";
+import { useEffect } from "react";
 import "../components/projects.css";
 import { Fade } from "react-awesome-reveal";
-// import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 
-// const history = useHistory();
-
-// history.go(0);
 const Projects = () => {
+  const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   navigate(0);
+  // }, [navigate]);
   return (
     <Fade>
       <div className="main-projects">

@@ -2,8 +2,12 @@ import React from "react";
 import "../components/about.css";
 import Photo from "../assets/images/msoto.jpg";
 import { Fade } from "react-awesome-reveal";
-
+import { useNavigate } from "react-router-dom";
 const About = () => {
+  const navigate = useNavigate();
+
+  // refresh
+  navigate(0);
   return (
     <Fade>
       <div className="main-about" id="main">
